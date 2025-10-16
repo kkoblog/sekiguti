@@ -10,7 +10,7 @@ const SectionHeader = ({ title, subtitle, underlineColor }) => (
     <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center text-black">
       <span className="relative inline-block pb-4">
         {title}
-        <span className="absolute -bottom-2 left-0 w-full h-1 bg-[#9cc812]"></span>
+        <span className="absolute -bottom-2 left-0 w-full h-1 bg-[#7fbcd1]"></span>
       </span>
     </h2>
     {subtitle && (
@@ -41,7 +41,7 @@ const colors = {
   primary: {
     bg: 'bg-white',      // 背景色を白に変更
     text: 'text-[#4a4a4a]',  // ダークグレー
-    accent: 'bg-[#9cc812]',  // 新しいアクセントカラー
+    accent: 'bg-[#7fbcd1]',  // 新しいアクセントカラー
   },
   secondary: {
     light: 'bg-[#fdfbf9]',   // オフホワイト
@@ -71,8 +71,8 @@ const StaffCard = ({ image, name, position, message }) => {
     <div className="bg-[#f5f5f5] p-4 md:p-8 rounded-xl shadow-sm">
       <div className="bg-white/80 p-6 rounded-xl shadow-sm h-full flex flex-col">
         <div className="flex items-center space-x-2 mb-4">
-          <i className="fas fa-quote-left text-[#D3B58D] text-xl"></i>
-          <span className="text-[#D3B58D] font-medium"></span>
+          <i className="fas fa-quote-left text-[#7fbcd1] text-xl"></i>
+          <span className="text-[#7fbcd1] font-medium"></span>
         </div>
         
         <div className="flex items-center mb-6">
@@ -92,76 +92,10 @@ const StaffCard = ({ image, name, position, message }) => {
         </div>
         
         <div className="space-y-4 mb-6">
-          <p className="text-gray-700 leading-relaxed mb-6">
+          <p className="text-gray-700 leading-relaxed mb-6 whitespace-pre-line">
             {message}
           </p>
           
-          {name === "峯 琴奈" ? (
-            <>
-              <p className="text-gray-700 leading-relaxed mb-6">
-  でも<span className="font-bold text-[#D3B58D]">amberlに入社して</span>、
-  <span className="bg-[#D3B58D]/10 px-2 py-1 rounded inline-block mt-1">
-    マンツーマンサロンならではの、お客様一人一人との丁寧な関わりを学ぶことができました。
-    アットホームな雰囲気の中、スタッフ同士も仲が良く、分からないことも親切に教えてもらえる環境です。
-  </span>
-</p>
-
-<p className="text-gray-700 leading-relaxed mb-6">
-  自宅からの通いやすさに加えて、
-  <span className="border-b-2 border-[#D3B58D]">
-    完全週休2日で月8〜9日休めるメリハリのある働き方でプライベートも充実。お客様とスタッフの関係性も深く、安心して働ける環境です。
-  </span>
-</p>
-
-<p className="text-gray-700 leading-relaxed mb-6">
-  <span className="bg-[#D3B58D]/10 px-2 py-1 rounded inline-block mt-1">
-    スタッフ一人一人が生き生きと働けるサロンで、毎日がやりがいに満ちています。
-  </span>
-</p>
-            </>
-          ) : (
-            <>
-
-              <p className="text-gray-700 leading-relaxed mb-6">
-                <span className="font-bold text-[#D3B58D]">学んだこと</span>
-                <span className="bg-[#D3B58D]/10 px-2 py-1 rounded inline-block mt-1">
-                  スタイリストそれぞれが得意とするスタイルが異なるため、お互いのテクニックやアプローチ方法を学び合える環境です。
-                  気軽にアドバイスを求められる雰囲気があり、日々新しい発見があります。
-                </span>
-              </p>
-
-              <p className="text-gray-700 leading-relaxed mb-6">
-                <span className="font-bold text-[#D3B58D]">お店の雰囲気</span>
-                <span className="bg-[#D3B58D]/10 px-2 py-1 rounded inline-block mt-1">
-                  店内には木と植物がたくさんあり、落ち着いた雰囲気が特徴です。
-                  新規のお客様からも「リラックスできる空間ですね」と嬉しいお言葉をいただいています。
-                  大人女性のお客様が中心で、普段は落ち着いた雰囲気ですが、楽しい会話で盛り上がると自然と明るく賑やかな空間に。
-                  そんなメリハリのある雰囲気も魅力の一つです。
-                </span>
-              </p>
-
-              <p className="text-gray-700 leading-relaxed mb-6">
-                <span className="font-bold text-[#D3B58D]">求人を見ている方に一言</span>
-                <div className="space-y-3 bg-[#D3B58D]/10 px-2 py-1 rounded mt-1">
-                  <p className="flex items-start">
-                    
-                    <span>
-                      以前の職場と比べてゆったりとした働き方になったにも関わらず、売上は1.5倍に伸びました。
-                      心に余裕を持って働けることで、より良い施術ができています。
-                    </span>
-                  </p>
-                  <p className="pl-4 border-l-2 border-[#D3B58D]/20">
-                    自分の得意分野を活かした技術メニューやクーポンを自由に提案できる環境があり、
-                    スタイリストとしての創造性を発揮できます。
-                  </p>
-                  <p className="pl-4 border-l-2 border-[#D3B58D]/20">
-                    スタッフ同士の仲が良く、飲み会などのイベントも参加は完全に自由。
-                    一人一人の意思が尊重される働きやすい環境です。
-                  </p>
-                </div>
-              </p>
-            </>
-          )}
         </div>
       </div>
     </div>
@@ -351,22 +285,25 @@ function MainComponent() {
   const RequirementSection = () => {
     const requirements = [
       {
-        main: "ゆとりある働き方をしたい",
-        sub: "1日最大5名までのゆとりある働き方で、疲弊することなく働きたい方"
+        main: "ネイリスト経験者で、技術を向上させたい",
+        sub: "JNECネイリスト検定（旧JNA）をお持ちで、スカルプチュアやジェルネイルの技術を磨きたい方"
       },
       {
-        main: "自分の強みを活かして、好きなことを追求したい",
-        sub: "自分らしい創造性を活かしたスタイリングを追求したい方"
+        main: "美容師免許をお持ちで、アイリストに挑戦したい",
+        sub: "まつげパーマ、アイラッシュ、まつげエクステの技術を学び、ネイルも出来る方大歓迎"
       },
       {
-        main: "難しいメニューは苦手",
-        sub: "特殊な技術に特化せず、基本に忠実な施術で活躍したい方"
+        main: "柔軟な働き方を求める方",
+        sub: "パート、正社員、業務委託から選択可能。週1回から週6回まで、シフト制で働けます"
       },
       {
-        main: "将来、独立をしたい",
-        sub: "正社員から業務委託まで、ライフスタイルに合わせた働き方を選択できます"
+        main: "学び続けたい、成長したい方",
+        sub: "費用は会社負担で外部講習に参加可能。自己成長もできる環境です"
       },
-      
+      {
+        main: "チームワークを大切にできる方",
+        sub: "スタッフ同士が仲良く、不安や心配事はみんなで解決。仲間の夢を応援できる方"
+      }
     ];
 
     const [ref, inView] = useInView({
@@ -398,7 +335,7 @@ function MainComponent() {
               >
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0 mt-1">
-                    <div className="w-6 h-6 bg-[#D3B58D]/20 rounded-full flex items-center justify-center">
+                    <div className="w-6 h-6 bg-[#7fbcd1]/20 rounded-full flex items-center justify-center">
                       <span className="text-black text-sm font-medium">
                         {index + 1}
                       </span>
@@ -496,16 +433,16 @@ function MainComponent() {
         <div className="max-w-6xl mx-auto">
           <div className="flex justify-between items-center px-4 h-16">
             <div className="text-xl font-bold">
-              amberl
+              Lokahi
             </div>
             {/* PC用ナビゲーション */}
             <nav className="hidden md:block">
               <ul className="flex space-x-8">
-                <li><a href="#concept" className="hover:text-[#D3B58D] transition-colors duration-300">amberlで働くことで得られる事</a></li>
-                <li><a href="#staff" className="hover:text-[#D3B58D] transition-colors duration-300">スタッフ紹介</a></li>
-                <li><a href="#requirements" className="hover:text-[#D3B58D] transition-colors duration-300">募集要項</a></li>
-                <li><a href="#qa" className="hover:text-[#D3B58D] transition-colors duration-300">よくある質問</a></li>
-                <li><a href="#owner-message" className="hover:text-[#D3B58D] transition-colors duration-300">オーナー挨拶</a></li>
+                <li><a href="#concept" className="hover:text-[#7fbcd1] transition-colors duration-300">amberlで働くことで得られる事</a></li>
+                <li><a href="#staff" className="hover:text-[#7fbcd1] transition-colors duration-300">スタッフ紹介</a></li>
+                <li><a href="#requirements" className="hover:text-[#7fbcd1] transition-colors duration-300">募集要項</a></li>
+                <li><a href="#qa" className="hover:text-[#7fbcd1] transition-colors duration-300">よくある質問</a></li>
+                <li><a href="#owner-message" className="hover:text-[#7fbcd1] transition-colors duration-300">オーナー挨拶</a></li>
               </ul>
             </nav>
             {/* モバイル用ハンバーガーメニュー */}
@@ -527,7 +464,7 @@ function MainComponent() {
         <div className={`md:hidden fixed top-16 left-0 right-0 bg-white shadow-lg transition-all duration-300 ${isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
           <nav className="p-4">
             <ul className="space-y-4">
-              <li><a href="#concept" className="block py-2" onClick={() => setIsMenuOpen(false)}>amberlで働くことで得られる事</a></li>
+              <li><a href="#concept" className="block py-2" onClick={() => setIsMenuOpen(false)}>Lokahiで働くことで得られる事</a></li>
               <li><a href="#staff" className="block py-2" onClick={() => setIsMenuOpen(false)}>スタッフ紹介</a></li>
               <li><a href="#requirements" className="block py-2" onClick={() => setIsMenuOpen(false)}>募集要項</a></li>
               <li><a href="#qa" className="block py-2" onClick={() => setIsMenuOpen(false)}>よくある質問</a></li>
@@ -539,7 +476,7 @@ function MainComponent() {
 
       {/* インスタグラムリンクタブ（モバイル用） */}
       <a
-        href="https://www.instagram.com/amberl202467"
+        href="https://www.instagram.com/eye_nail_lokahi/?igsh=am9jZGR3eGltdm80#"
         target="_blank"
         rel="noopener noreferrer"
         className="instagram-tab fixed top-20 right-0 z-50 bg-gradient-to-tr from-[#FFD600] via-[#FF7A00] via-[#FF0069] via-[#D300C5] to-[#7638FA] text-white p-3 rounded-l-lg shadow-lg transform translate-x-full hover:translate-x-0 transition-all duration-300 md:hidden opacity-0 invisible"
@@ -553,7 +490,7 @@ function MainComponent() {
         <div className="relative">
           <div className="w-full">
             <Image
-              src="/image/top.jpeg"
+              src="/image/detail_top.jpg"
               alt="明るく清潔感のあるサロン内装"
               width={1200}
               height={600}
@@ -563,17 +500,14 @@ function MainComponent() {
             {/* メッセージのオーバーレイ */}
             <div className="absolute inset-0 flex items-center">
               <div className="text-white px-0 md:px-12 ml-4 md:hidden"> {/* md:hidden を追加してPCでは非表示に */}
-                <h1 className="text-2xl md:text-3xl font-medium tracking-wider leading-relaxed mb-3 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] text-shadow-strong">
-                  “ストレスフリーな美容師LIFE“<br />
-                  美容師として輝きながら、<br />
-                  プライベートも大切に。<br />
-                  自分の理想的な美容師人生へ。
+                <h1 className="text-3xl md:text-3xl font-medium tracking-wider leading-relaxed mb-3 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] text-shadow-strong">
+                  No Lokahi No Life
                 </h1>
               </div>
             </div>
             <Image
-              src="/image/zentai.jpeg"
-              alt="amberlスタッフ集合写真"
+              src="/image/top2.png"
+              alt="lokahiスタッフ集合写真"
               width={1200}
               height={600}
               className="md:w-full md:h-[80vh] w-screen h-auto object-cover"
@@ -588,18 +522,16 @@ function MainComponent() {
               {/* 最初のメッセージ */}
               <div className="text-left">
                 <h1 className="text-2xl md:text-3xl font-medium tracking-wider leading-relaxed mb-3 opacity-0 translate-y-10 transition-all duration-1000 ease-out" style={{ animationFillMode: 'forwards' }}>
-                “ストレスフリーな美容師LIFE“<br />
-                美容師として輝きながら、<br />
-                  プライベートも大切に。<br />
-                  自分の理想的な美容師人生へ。
+                No Lokahi No Life
                 </h1>
               </div>
 
               {/* 2番目のメッセージ */}
               <div className="text-left">
                 <p className="text-base md:text-lg leading-loose tracking-wider opacity-0 translate-y-10 transition-all duration-1000 ease-out delay-300" style={{ animationFillMode: 'forwards' }}>
-                  安心して自分らしい働き方を実現<br />
-                  大好きな美容師の仕事が、<br />長く続けられるサロン。
+                  「やりたいこと」より先に、<br />「自分らしさ」を。<br />
+                  環境の変化に寄り添い、<br />
+                  あなたの人生に合わせた働き方を。
                 </p>
               </div>
             </div>
@@ -615,32 +547,26 @@ function MainComponent() {
       <section className="py-8 md:py-12 mt-4 md:mt-6 bg-white">
         <div className="relative z-10">
           <SectionHeader 
-            title={<>多くの美容師が抱える悩み事、<br />当サロンでは一切致しません</>}
-            subtitle="現場で美容師を困らせがちな環境や課題"
-            underlineColor="#D3B58D"
+            title={<>「このままでいいのかな...」<br />そんな不安から解放されます</>}
+            subtitle="今の環境に少しでも違和感を感じているあなたへ"
+            underlineColor="#7fbcd1"
           />
           <div className="max-w-6xl mx-auto px-4">
             <div className="grid grid-cols-2 gap-2 md:gap-8">
-              {/* 左側: 一般的な美容室の悩み */}
+              {/* 左側: 一般的なネイルサロンの悩み */}
               <div className="p-2 md:p-6 rounded-lg h-full flex flex-col">
-                <h3 className="text-base md:text-xl font-bold text-center mb-3 md:mb-6 text-gray-500">＜他店での悩み＞</h3>
+                <h3 className="text-base md:text-xl font-bold text-center mb-3 md:mb-6 text-gray-500">＜よくある悩み＞</h3>
                 <div className="flex flex-col items-center gap-2 md:gap-4 flex-grow">
                   {[
-                    "「スタイリストになったのに...」\n先輩の手伝いばかりで、自分の入客の時間がもらえない💦",
-                    "「結婚後の生活が不安...」朝から夜遅くまで働き、勤務終了後は後輩の面倒を見ないといけない💦",
-                    "「技術を磨きたいのに...」\nシャンプー、ブロー、掃除に追われる毎日💦",
-                    "「こんなはずじゃなかった...」\n早く帰るスタッフは冷たい目で見られ、残業が当たり前の雰囲気💦",
-                    "「将来が見えない...」\n長時間労働で疲弊し、プライベートも充実できず、美容師としての成長も停滞💦"
+                    "将来のライフスタイルが不安...\n結婚や出産後も続けられる仕事なのかな",
+                    "キャリアの見通しが持てない...\n技術以外の成長の機会が欲しい",
+                    "自分らしい働き方ができるか...\n環境の変化に対応できるのかな"
                   ].map((concern, index) => (
                     <React.Fragment key={index}>
                       <div className="border-2 border-gray-200 rounded-lg p-2 md:p-4 w-full text-left bg-white shadow-sm text-xs md:text-base leading-relaxed text-gray-600 min-h-[120px] md:min-h-[140px] flex items-center justify-start px-4 md:px-6 whitespace-pre-wrap">
                         {concern}
                       </div>
-                      {index < 4 && (
-                        <div className="text-gray-400 text-base md:text-2xl">
-                          ↓
-                        </div>
-                      )}
+                      
                     </React.Fragment>
                   ))}
                 </div>
@@ -648,24 +574,18 @@ function MainComponent() {
 
               {/* 右側: amberlの場合 */}
               <div className="p-2 md:p-6 rounded-lg h-full flex flex-col">
-                <h3 className="text-base md:text-xl font-bold text-center mb-3 md:mb-6 text-black">＜amberlの場合＞</h3>
+                <h3 className="text-base md:text-xl font-bold text-center mb-3 md:mb-6 text-black">＜Lokahiの場合＞</h3>
                 <div className="flex flex-col items-center gap-2 md:gap-4 flex-grow">
                   {[
-                    "あなたのワークバランスを考えた働き方を提案・提供✨ ",
-                    "マンツーマンでゆとりある働き方\n1日最大5名まで✨",
-                    "家族・プライベートの時間がつくれる\n完全週休2日制（毎週月曜＋希望日、土日休み可）✨",
-                    "ストレスフリーな生涯現役美容師ライフ\n社保完備、産休・育休取得率100%、時短勤務OK✨",
-                    "スタイリスト見習いでも安心の環境\n入社1年目でも月収25-30万円、入社初月70〜80名入客実績あり✨"
+                    "ライフスタイルに合わせた働き方✨\n結婚・出産後の復職実績が豊富です",
+                    "キャリアアップのための環境を整えています✨あなたの希望に合わせた働き方が可能です",
+                    "1店舗だから実現できる柔軟性✨\n人生の変化に寄り添える環境があります"
                   ].map((solution, index) => (
                     <React.Fragment key={index}>
-                      <div className="border-2 border-[#9cc812] rounded-lg p-2 md:p-4 w-full text-left bg-white shadow-sm text-xs md:text-base leading-relaxed min-h-[120px] md:min-h-[140px] flex items-center justify-start px-4 md:px-6 whitespace-pre-wrap">
+                      <div className="border-2 border-[#7fbcd1] rounded-lg p-2 md:p-4 w-full text-left bg-white shadow-sm text-xs md:text-base leading-relaxed min-h-[120px] md:min-h-[140px] flex items-center justify-start px-4 md:px-6 whitespace-pre-wrap">
                         {solution}
                       </div>
-                      {index < 4 && (
-                        <div className="text-[#9cc812] text-base md:text-2xl">
-                          ↓
-                        </div>
-                      )}
+                      
                     </React.Fragment>
                   ))}
                 </div>
@@ -682,7 +602,7 @@ function MainComponent() {
       <div className="mt-4 bg-white relative overflow-hidden">
         <div className="relative z-10">
           <SectionHeader 
-            title="amberlの特徴"
+            title="Lokahiの特徴"
           />
          
           <div className="mt-8 md:mt-12">
@@ -702,186 +622,98 @@ function MainComponent() {
             className="text-base md:text-xl leading-relaxed text-center max-w-3xl mx-auto space-y-6"
           >
             <div 
-              className={`bg-white rounded-lg p-6 shadow-md border border-[#D3B58D]/20 hover:shadow-lg transition-all duration-700 ${
+              className={`bg-white rounded-lg p-6 shadow-md border border-[#7fbcd1]/20 hover:shadow-lg transition-all duration-700 ${
                 featuresInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
               style={{ transitionDelay: '100ms' }}
             >
-              <span className="text-[#D3B58D] font-bold text-lg">①</span>
-              女性美容師が活躍できる環境
+              <span className="text-[#7fbcd1] font-bold text-lg">①</span>
+              落ち着いた環境で施術に集中できる
               
               <br />
               <br />
               <span className="text-gray-700 text-sm md:text-base">
-                20代〜40代の女性スタイリストが活躍中。
+                駅前の商店街に位置する、マンションの1室。
                 <br />
-                子育て中のママさんスタイリストも多数在籍。
+                女性限定の完全予約制サロンのため、
                 <br />
-                お客様の年齢層も同世代が多く、
+               落ち着いた環境で
                 <br />
-                ライフスタイルの共感から生まれる信頼関係を
+                お客様一人一人と向き合えます。
                 <br />
-                築きやすい環境です
+                リピーターの多い、アットホームな雰囲気で
+                <br />
+                活気のある職場環境です。
                 <br />
                 
               </span>
             </div>
 
             <div 
-              className={`bg-white rounded-lg p-6 shadow-md border border-[#D3B58D]/20 hover:shadow-lg transition-all duration-700 ${
+              className={`bg-white rounded-lg p-6 shadow-md border border-[#7fbcd1]/20 hover:shadow-lg transition-all duration-700 ${
                 featuresInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
               style={{ transitionDelay: '300ms' }}
             >
-              <span className="text-[#D3B58D] font-bold text-lg">②</span>
-              ワークライフバランスを
+              <span className="text-[#7fbcd1] font-bold text-lg">②</span>
+              安心して長く働ける
               <br />
-              考えた働き方ができます
+              充実した環境があります
               <br />
               <br />
               <span className="text-gray-700 text-sm md:text-base">
-                <span className="text-[#D3B58D] font-medium">
-                  お一人お一人と向き合える環境
+                業界水準の給与体系で安定して働けます。
+                <br />
+                <span className="text-[#7fbcd1] font-medium">
+                  完全週休2日制・残業なし
                 </span>
-                で、
+                の環境で、
                 <br />
-                1日最大5名までのゆとりのある施術
+                現在は全員がママさんスタッフとして活躍中。
                 <br />
-                急いで次のお客様に移ることなく、
+                出産後の復職実績も豊富で、
                 <br />
-                <span className="bg-[#D3B58D]/10 px-2 py-1 rounded inline-block mt-1">
-                  理想の美容師ライフを実現できます
+                <span className="bg-[#7fbcd1]/10 px-2 py-1 rounded inline-block mt-1">
+                  長く安心して働ける職場づくりを大切にしています
                 </span>
               </span>
             </div>
 
             <div 
-              className={`bg-white rounded-lg p-6 shadow-md border border-[#D3B58D]/20 hover:shadow-lg transition-all duration-700 ${
+              className={`bg-white rounded-lg p-6 shadow-md border border-[#7fbcd1]/20 hover:shadow-lg transition-all duration-700 ${
                 featuresInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
               style={{ transitionDelay: '500ms' }}
             >
-              <span className="text-[#D3B58D] font-bold text-lg">③</span>
-              スタイリスト個人が自分の強みをいかせる
+              <span className="text-[#7fbcd1] font-bold text-lg">③</span>
+              自分らしいキャリアを
+              <br />
+              自由に選択できる
               <br />
               <br />
               <span className="text-gray-700 text-sm md:text-base">
- 
-                <span className="text-[#D3B58D] font-medium">スタイリスト一人一人に専用の材料棚を用意</span>し、
+                <span className="text-[#7fbcd1] font-medium">月1回のセミナー</span>では、
                 <br />
-                自分が使いたい材料、お客様に合った商品を
+                技術だけでなく、経営やお金の知識など
                 <br />
-                自由に選んで注文することができます。
+                幅広い学びの機会を提供。
                 <br />
-                これにより、スタイリストとしての
-                <span className="border-b border-[#D3B58D]">創造性と判断力が養われ、</span>
+                <span className="border-b border-[#7fbcd1]">学びたい技術があれば、費用は会社負担で<br />外部講習に行く事も可能</span>など、
                 <br />
-                自分らしい成長を実現できる環境です
+                キャリアアップを目指す方への環境も充実。
+                <br />
+                <br />
+                <span className="bg-[#7fbcd1]/10 px-2 py-1 rounded inline-block mt-1">
+                  あなたの描く理想の人生に合わせて、
+                  <br />
+                  自由に選択できる環境があります
+                </span>
               </span>
             </div>
           </div>
         </div>
       </div>
 
-      {/* セクション間のセパレーター */}
-      <div className="w-full h-16 bg-white"></div>
-
-      {/* 使用商材セクション */}
-      <section className="py-16 md:py-24 bg-white">
-        <SectionHeader 
-          title="使用商材"
-          subtitle="Products"
-        />
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="grid grid-cols-2 gap-3 md:gap-6">
-            {/* BYKALTE */}
-            <div className="bg-white border border-gray-100 overflow-hidden hover:border-gray-200 transition-all duration-300">
-              <div className="relative aspect-[16/9]">
-                <Image
-                  src="/image/baikarute.jpeg"
-                  alt="baikarute製品"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-2 md:p-4">
-                <h3 className="text-sm md:text-lg font-bold mb-1 md:mb-2">BYKALTE</h3>
-                <p className="text-xs md:text-sm text-gray-600 leading-relaxed">
-                株式会社ホーユープロフェッショナルが展開するヘアケアブランド。ダメージ補修に特化したトリートメント。
-                </p>
-              </div>
-            </div>
-
-            {/* VILLA */}
-            <div className="bg-white border border-gray-100 overflow-hidden hover:border-gray-200 transition-all duration-300">
-              <div className="relative aspect-[16/9]">
-                <Image
-                  src="/image/violla.jpeg"
-                  alt="Villa製品"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-2 md:p-4">
-                <h3 className="text-sm md:text-lg font-bold mb-1 md:mb-2">Villa Lodola</h3>
-                <p className="text-xs md:text-sm text-gray-600 leading-relaxed">
-                イタリア・ウンブリア州に広がる有機栽培農場。その地で生まれたプロユース専門メーカーKemon社のオーガニックブランド。
-
-
-                </p>
-              </div>
-            </div>
-
-            {/* edol */}
-            <div className="bg-white border border-gray-100 overflow-hidden hover:border-gray-200 transition-all duration-300">
-              <div className="relative aspect-[16/9]">
-                <Image
-                  src="/image/edol.jpeg"
-                  alt="edol製品"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-2 md:p-4">
-                <h3 className="text-sm md:text-lg font-bold mb-1 md:mb-2">edol</h3>
-                <p className="text-xs md:text-sm text-gray-600 leading-relaxed">
-                タカラベルモントの理美容室専売ヘアカラーブランド「LebeL」の製品。透明感のあるヘアカラーを実現する次世代型カラー剤。
-                </p>
-              </div>
-            </div>
-
-            {/* 001 */}
-            <div className="bg-white border border-gray-100 overflow-hidden hover:border-gray-200 transition-all duration-300">
-              <div className="relative aspect-[16/9]">
-                <Image
-                  src="/image/001.jpeg"
-                  alt="001製品"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-2 md:p-4">
-                <h3 className="text-sm md:text-lg font-bold mb-1 md:mb-2">エンシャンテッド</h3>
-                <p className="text-xs md:text-sm text-gray-600 leading-relaxed">
-                  頭皮と髪のリセットに拘った自社ブランドのシャンプー・トリートメント。
-                
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* 商材に関する追加情報 */}
-          <div className="mt-12 bg-white border border-gray-100 p-8">
-            <h4 className="text-lg font-bold mb-4">商材へのこだわり</h4>
-            <p className="text-gray-600 leading-relaxed">
-              amberlでは、お客様一人一人の髪質や好みに合わせて、
-              最適な商材を選定しています。スタイリスト各自が
-              使用したい商材を選べる環境を整えており、
-              より良い施術のために常に新しい商材も積極的に取り入れています。
-            </p>
-          </div>
-        </div>
-      </section>
 
       {/* セクション間のセパレーター */}
       <div className="w-full h-2 bg-white"></div>
@@ -889,7 +721,7 @@ function MainComponent() {
       {/* 得られることセクション */}
       <section id="concept" className="py-16 md:py-24 bg-white">
         <SectionHeader 
-          title="amberlで働くことで得られる事"
+          title="Lokahiで働くことで得られる事"
           subtitle="あなたらしい働き方"
         />
         <div className="max-w-6xl mx-auto px-4">
@@ -904,7 +736,7 @@ function MainComponent() {
               style={{ transitionDelay: '100ms' }}
             >
               <h3 className="text-2xl mb-4 font-bold">
-                家族や趣味の時間を作りやすい
+                自分の価値観で働ける喜び
               </h3>
               <div className="flex flex-col md:flex-row gap-4 md:gap-6">
                 <div className="w-full md:w-[400px] flex-shrink-0">
@@ -917,9 +749,10 @@ function MainComponent() {
                   />
                 </div>
                 <p className="text-base md:text-lg leading-relaxed">
-                  完全週休2日制で月8〜9日休めるため、家族との時間や自分の時間を大切にできます。
-                  また、1日最大5名までの施術で心と体に余裕を持って働けるため、仕事と家庭を無理なく両立できます。
-                  長く美容師として活躍できる、持続可能な働き方を実現できます。
+                  「こうあるべき」という固定観念から解放されます。
+                  売上や組織の価値観に縛られず、
+                  あなたが大切にしたいものを優先できる。
+                  自分の人生を、自分の価値観で働くことができる環境です。
                 </p>
               </div>
             </div>
@@ -932,7 +765,7 @@ function MainComponent() {
             >
            
               <h3 className="text-2xl mb-4 font-bold">
-                ストレスフリーな職場環境
+                新しい可能性との出会い
               </h3>
               <div className="flex flex-col md:flex-row gap-4 md:gap-6">
                 <div className="w-full md:w-[400px] flex-shrink-0">
@@ -945,13 +778,11 @@ function MainComponent() {
                   />
                 </div>
                 <p className="text-base md:text-lg leading-relaxed">
-                  都会の美容室でよくある上下関係や人間関係のストレスから解放されます。
-                  無理な残業や後輩の指導を強制されることもなく、
-                  自分の仕事に集中できる環境です。
-                  帰宅時間が決まっているため、家族との時間や趣味の時間も
-                  しっかり確保できます。
-                  ストレスフリーな環境で、長く美容師として
-                  活躍していただけます。
+                  技術だけでなく、経営やお金の知識を得ることで、
+                  人生の選択肢が広がっていきます。
+                  「ネイリスト・アイリスト」の枠を超えて、
+                  自分の可能性を再発見でき、
+                  新しい夢や目標に出会える場所です。
                 </p>
               </div>
             </div>
@@ -963,7 +794,7 @@ function MainComponent() {
               style={{ transitionDelay: '300ms' }}
             >
               <h3 className="text-2xl mb-4 font-bold">
-                生活の環境に応じて<br />正社員、業務委託のシフトが可能
+                心からの笑顔を取り戻せる
               </h3>
               <div className="flex flex-col md:flex-row gap-4 md:gap-6">
                 <div className="w-full md:w-[400px] flex-shrink-0">
@@ -976,8 +807,10 @@ function MainComponent() {
                   />
                 </div>
                 <p className="text-base md:text-lg leading-relaxed">
-                  現代のワークライフバランスを考え、当店では正社員と業務委託の選択が可能です。
-                  最初は不安なので正社員で入社、のちに業務委託の報酬制にすることも可能です。
+                  人間関係の悩みやプレッシャーから解放され、
+                  本来の自分を取り戻せます。
+                  仕事を楽しみ、プライベートも充実させ、
+                  自分の人生を豊かに、より生きやすくなります。
                 </p>
               </div>
             </div>
@@ -992,19 +825,18 @@ function MainComponent() {
       <section className="py-12 md:py-16 bg-white relative overflow-hidden">
         <div className="relative z-10">
           <SectionHeader 
-            title="現場仕事の日のとある1日"
+            title="1日の流れ（早番の場合）"
           />
           
           <div className="max-w-4xl mx-auto px-4">
             <div className="space-y-6">
               {[
-                { time: "9:30", activity: "出勤、掃除" },
-                { time: "10:00", activity: "オープン" },
-                { time: "10:00-18:00", activity: "スタイリスト施術業務" },
+                { time: "8:30", activity: "店内清掃、カルテ管理、予約確認等お客様ご来店前の準備" },
+                { time: "9:00-17:30", activity: "施術\nチームとして自分以外のスタッフフォローもできる範囲で行い、助け合う" },
                 { 
-                  time: "ランチタイム", 
-                  activity: "カラーの放置時間や予約の空き時間を利用して、自由なタイミングで休憩",
-                  note: "※施術の合間に柔軟に取得可能"
+                  time: "17:30以降", 
+                  activity: "最終予約終了後、清掃、売上管理、カルテ記入",
+                  note: "※遅番の場合19時頃終了"
                 }
               ].map((schedule, index) => (
                 <div 
@@ -1012,7 +844,7 @@ function MainComponent() {
                   className="flex items-start gap-6 group hover:bg-gray-50 p-4 transition-all duration-300"
                 >
                   <div className="w-24 flex-shrink-0">
-                    <span className="text-[#D3B58D] font-medium text-sm">{schedule.time}</span>
+                    <span className="text-[#7fbcd1] font-medium text-sm">{schedule.time}</span>
                   </div>
                   <div className="flex-grow">
                     <div className="text-gray-800 text-sm font-medium">{schedule.activity}</div>
@@ -1023,37 +855,6 @@ function MainComponent() {
                 </div>
               ))}
 
-              <div className="mt-12 bg-gray-50 p-6">
-                <h4 className="text-base font-medium text-[#D3B58D] mb-4 pb-2 border-b border-[#D3B58D]/20">
-                  1日の流れのポイント
-                </h4>
-                <div className="space-y-4 text-gray-700 text-sm">
-                  <div className="flex items-start gap-3">
-                    <div className="w-1 h-1 bg-[#D3B58D] rounded-full mt-2"></div>
-                    <p>
-                      <span className="font-medium block mb-1">退勤時間</span>
-                      18:00〜19:00の間で、お客様の施術終了次第、簡単な掃除を行い退勤。
-                      その後の残業はありません。
-                    </p>
-                  </div>
-
-                  <div className="flex items-start gap-3">
-                    <div className="w-1 h-1 bg-[#D3B58D] rounded-full mt-2"></div>
-                    <p>
-                      マンツーマン制で、一日平均3〜5名のお客様を担当。
-                      メニューに応じて丁寧な施術時間を確保しています。
-                    </p>
-                  </div>
-                  
-                  <div className="flex items-start gap-3">
-                    <div className="w-1 h-1 bg-[#D3B58D] rounded-full mt-2"></div>
-                    <p>
-                      お客様と親身に向き合い、丁寧な施術ができる環境を整えており、
-                      時間に追われることなく、質の高いサービスを提供できます。
-                    </p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -1072,18 +873,41 @@ function MainComponent() {
         <div className="max-w-5xl mx-auto px-4">
           <div className="space-y-8">
             <StaffCard 
-              image="/image/st2.jpeg"
-              name="峯 琴奈"
-              position="入社2年 / スタイリスト"
-              message={`以前は、技術を学ぶ機会が限られていて、なかなか成長を実感できない環境でした。
-                  時間に追われる毎日で、お客様一人一人と向き合う余裕もなく...`}
+              image="/image/asan.png"
+              name="Aさん"
+              position="入店1ヶ月"
+              message={`他店でネイリスト歴2年、美容師免許も取得していてまつ毛パーマもできるハイブリッドな働き方です。
+
+人間関係はみんなが無理なく働いていて、ゆったりとしたいい雰囲気。
+
+結婚後や出産後に働き方を変えられるのも魅力です。
+
+自分の気持ちとお店の進み具合などのすり合わせを定期的に面談でしてもらえたり、
+
+自分は朝が苦手なので
+相談すると早めに出勤時間を対応してもらえた事も安心できました。`}
             />
             
             <StaffCard 
-              image="/image/terai.jpeg"
-              name="寺井 綾希 "
-              position="入社⚫︎年 / スタイリスト"
-              message={`「不安な技術も責任持って指導します！」\nそんなオーナーの一言に心強さを感じ、入社を決意しました。\n\n完全週休二日制に加えて、予約のない日は定時前に帰宅できるため、\n自分の時間に余裕が持てるようになりました。`}
+              image="/image/bsan.png"
+              name="Bさん "
+              position="未経験入店"
+              message={`私は未経験で入店し、アイリスト歴2年です。
+
+パーマやエクステができるようになってから、ネイルにも興味がありセルフでもやっていたのでネイリストの道も挑戦させて貰いました。　
+
+ただ、アイとの両立が思った以上に難しく自分の子育てもあり今は断念しましたが、
+
+オーナーは、
+
+「やりたくなったらまた教えてね。挑戦する人を応援したいから」
+
+と暖かい言葉をかけてくれました。
+
+今はアイに集中していますが、それで教えてくれた先輩方とギクシャクする事もなく
+
+「今はできない」という事を一緒に受け止めてくれました。
+このお店に来て良かったです。`}
             />
           </div>
         </div>
@@ -1105,110 +929,87 @@ function MainComponent() {
         {[
           {
             title: "勤務地",
-            content: "愛知県名古屋市緑区鳴海町母呂後７６"
+            content: "神奈川県鎌倉市大船1-13-15 skyビル203（大船駅徒歩3分）"
           },
           {
-            title: "雇用形態",
-            content: "正社員・業務委託"
-          },
-          {
-            title: "職種・給与",
+            title: "募集職種",
             content: (
               <div className="space-y-6">
                 <div>
-                  <h4 className="font-bold text-lg mb-4 text-[#D3B58D]">正社員</h4>
+                  <h4 className="font-bold text-lg mb-4 text-[#7fbcd1]">ネイリスト</h4>
                   <div className="space-y-4">
                     <div>
-                      <h5 className="font-medium mb-2">給与体系</h5>
+                      <h5 className="font-medium mb-2">応募条件</h5>
                       <ul className="list-disc pl-5 space-y-2 text-gray-600">
-                        <li>月給23万円～50万円 ※一律支給手当含む</li>
-                        <li>基本給：21万円～</li>
-                        <li>試用期間：2ヵ月間</li>
+                        <li>経験者のみ</li>
+                        <li>JNECネイリスト検定（旧JNA）必要</li>
                       </ul>
                     </div>
                     <div>
-                      <h5 className="font-medium mb-2">手当・賞与</h5>
+                      <h5 className="font-medium mb-2">給与</h5>
                       <ul className="list-disc pl-5 space-y-2 text-gray-600">
-                        <li>通勤手当：5,000円～2万円（通勤距離に応じて）</li>
-                        <li>役職手当：1万円～3万円（役職により変動）</li>
-                        <li>住宅手当：5,000円～2万円（住宅条件により変動）</li>
-                        <li>勤続手当：1,000円～10万円（歩合給に依存）</li>
-                        <li>賞与・昇給：あり</li>
+                        <li>パート：時給1,225円〜</li>
+                        <li>社員：19万円〜</li>
+                        <li>業務委託：完全歩合、出来高40％〜50％</li>
                       </ul>
                     </div>
                     <div>
-                      <h5 className="font-medium mb-2">給与例</h5>
-                      <p className="text-gray-600">基本給210,000円＋固定残業手当20,000円（18時間未満/月）※残業時間を超過する場合は別途支給<br />
-                      ＋歩合給（売上の5〜10%）＋店販手当10%</p>
-                      <p className="text-gray-600 mt-2">例）技術売上900,000円、店販売上100,000円の場合<br />
-                      総支給300,000円（基本給210,000円＋固定残業手当20,000円＋歩合給45,000円＋店販手当10,000円）</p>
+                      <h5 className="font-medium mb-2">勤務時間</h5>
+                      <ul className="list-disc pl-5 space-y-2 text-gray-600">
+                        <li>正社員<br />・8:30〜17:30（時短応相談）<br />・9:00〜18:00（時短応相談）<br />・10:00〜19:00（時短応相談）</li>
+                        <li>アルバイト・パート<br />・8:30〜17:30（時短応相談）<br />・9:00〜18:00（時短応相談）<br />・10:00〜19:00（時短応相談）</li>
+                        <li>業務委託<br />・週1回〜週6回、シフト制、時短勤務OK<br />・09:00〜17:00（時短応相談）<br />・11:00〜19:00（時短応相談）<br />・13:00〜21:00（時短応相談）</li>
+                        <li>最大7時間勤務、3時間からOK</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h5 className="font-medium mb-2">仕事内容</h5>
+                      <ul className="list-disc pl-5 space-y-2 text-gray-600">
+                        <li>スカルプチュア</li>
+                        <li>ジェルネイル</li>
+                        <li>パリジェンヌ、マツエク、まつげパーマも出来る方、大歓迎！</li>
+                      </ul>
                     </div>
                   </div>
                 </div>
 
                 <div>
-                  <h4 className="font-bold text-lg mb-4 text-[#D3B58D]">業務委託</h4>
+                  <h4 className="font-bold text-lg mb-4 text-[#7fbcd1]">アイリスト</h4>
                   <div className="space-y-4">
                     <div>
-                      <h5 className="font-medium mb-2">基本情報</h5>
+                      <h5 className="font-medium mb-2">応募条件</h5>
                       <ul className="list-disc pl-5 space-y-2 text-gray-600">
-                        <li>完全歩合制</li>
-                        <li>保障給：月額30万円（入社後6ヶ月間）</li>
-                        <li>試用期間：2ヵ月間</li>
+                        <li>美容師免許必要</li>
+                        <li>未経験OK</li>
                       </ul>
                     </div>
                     <div>
-                      <h5 className="font-medium mb-2">歩合内容</h5>
+                      <h5 className="font-medium mb-2">給与</h5>
                       <ul className="list-disc pl-5 space-y-2 text-gray-600">
-                        <li>技術売上（フリー・指名共通）（税抜）
-                          <ul className="list-none mt-2 space-y-1">
-                            <li>～600,000円 → 50％</li>
-                            <li>600,001～1,000,000円 → 55％</li>
-                            <li>1,000,001～1,500,000円 → 60％</li>
-                            <li>1,500,001円～ → 65％</li>
-                          </ul>
-                        </li>
-                        <li>店販売上：10%</li>
-                        <li>指名料売上：100%（料金は要相談）</li>
+                        <li>正社員：月給19.0万円〜25.0万円</li>
+                        <li>アルバイト・パート：時給1,162円〜</li>
+                        <li>業務委託：完全歩合、出来高40％〜50％</li>
                       </ul>
                     </div>
                     <div>
-                      <h5 className="font-medium mb-2">給与例</h5>
-                      <p className="text-gray-600">例）技術売上1,000,000円、店販売上100,000円の場合<br />
-                      総支給560,000円（歩合給550,000円＋店販手当10,000円）</p>
+                      <h5 className="font-medium mb-2">勤務時間</h5>
+                      <ul className="list-disc pl-5 space-y-2 text-gray-600">
+                        <li>正社員<br />・09:00〜17:00（時短応相談）<br />・11:00〜19:00（時短応相談）<br />・13:00〜21:00（時短応相談）</li>
+                        <li>アルバイト・パート<br />・09:00〜21:00（時短応相談）<br />・1日3時間からOK</li>
+                        <li>業務委託<br />・週1回〜週6回、シフト制、時短勤務OK<br />・09:00〜17:00（時短応相談）<br />・11:00〜19:00（時短応相談）<br />・13:00〜21:00（時短応相談）</li>
+                        <li>最大7時間勤務、3時間からOK</li>
+                      </ul>
                     </div>
                     <div>
-                      <h5 className="font-medium mb-2">費用負担</h5>
+                      <h5 className="font-medium mb-2">仕事内容</h5>
                       <ul className="list-disc pl-5 space-y-2 text-gray-600">
-                        <li>ブース代：330円×入客数/月</li>
-                        <li>消耗品材料費：技術売上の5～10%程度</li>
-                        <li>タオル代：技術売上×0.5%/月</li>
+                        <li>まつげパーマ</li>
+                        <li>アイラッシュ</li>
+                        <li>まつげエクステ</li>
+                        <li>マツエク、パリジェンヌ、まつげパーマの施術</li>
                       </ul>
                     </div>
                   </div>
-                </div>
-              </div>
-            )
-          },
-          {
-            title: "勤務時間",
-            content: (
-              <div className="space-y-4">
-                <div>
-                  <h5 className="font-medium mb-2">正社員</h5>
-                  <ul className="list-disc pl-5 space-y-2 text-gray-600">
-                    <li>09:30 - 19:00（所定勤務7-8時間／固定時間制）</li>
-                    <li>週5勤務</li>
-                    <li>18時以降予約がなければ帰宅可</li>
-                    <li>残業なし</li>
-                  </ul>
-                </div>
-                <div>
-                  <h5 className="font-medium mb-2">業務委託</h5>
-                  <ul className="list-disc pl-5 space-y-2 text-gray-600">
-                    <li>週5勤務（時短、週4勤務も相談可）</li>
-                    <li>勤務時間は応相談</li>
-                  </ul>
                 </div>
               </div>
             )
@@ -1217,23 +1018,15 @@ function MainComponent() {
             title: "休日・休暇",
             content: (
               <div className="space-y-4">
-                <p className="font-medium">年間休日数：110日</p>
                 <div>
+                  <h5 className="font-medium mb-2">休日制度</h5>
                   <ul className="list-disc pl-5 space-y-2 text-gray-600">
                     <li>完全週休2日制</li>
-                    <li>土日休みOK</li>
-                    <li>日曜休みOK</li>
-                  </ul>
-                </div>
-                <div>
-                  <h5 className="font-medium mb-2">休暇制度</h5>
-                  <ul className="list-disc pl-5 space-y-2 text-gray-600">
-                    <li>年末年始休暇（12/31、1/1.2.3.4）</li>
-                    <li>夏季休暇（2日間 ※年間どこでも使用可、1日ずつの使用可）</li>
-                    <li>冬季休暇（12/31、1/1.2.3.4）</li>
-                    <li>産前・産後休暇（法律に則って）</li>
-                    <li>育児休暇（法律に則って）</li>
-                    <li>年間有給休暇：10日</li>
+                    <li>日曜休み</li>
+                    <li>土日休み</li>
+                    <li>夏季冬季休暇有り</li>
+                    <li>希望休、勤務時間は考慮致します</li>
+                    <li>業務委託：土日出勤出来る方、大歓迎★</li>
                   </ul>
                 </div>
               </div>
@@ -1244,19 +1037,24 @@ function MainComponent() {
             content: (
               <div className="space-y-4">
                 <div>
-                  <h5 className="font-medium mb-2">社会保険・手当 ※社員のみ</h5>
+                  <h5 className="font-medium mb-2">基本福利厚生</h5>
                   <ul className="list-disc pl-5 space-y-2 text-gray-600">
+                    <li>インセンティブあり</li>
+                    <li>ノルマなし</li>
                     <li>社会保険完備</li>
-                    <li>通勤手当支給</li>
-                    <li>住宅手当支給</li>
+                    <li>寮完備</li>
+                    <li>交通費支給</li>
+                    <li>独立・開業支援</li>
+                    <li>制服あり</li>
+                    <li>育児休暇あり</li>
+                    <li>社員登用あり</li>
                   </ul>
                 </div>
                 <div>
-                  <h5 className="font-medium mb-2">その他制度</h5>
+                  <h5 className="font-medium mb-2">交通費・その他</h5>
                   <ul className="list-disc pl-5 space-y-2 text-gray-600">
-                    <li>研修、セミナー参加の費用補助（内容に合わせて）</li>
-                    <li>社員割引（商品、技術割引あり）</li>
-                    <li>スタイルアップ・ブログ等のAI自動更新ツール使用可</li>
+                    <li>交通費：社員15,000円まで、パート10,000円まで</li>
+                    <li>エプロン貸出</li>
                   </ul>
                 </div>
               </div>
@@ -1297,20 +1095,25 @@ function MainComponent() {
       title="よくあるご質問"
       subtitle="Q&A"
     />
+    <div className="max-w-4xl mx-auto px-4 mb-8">
+      <p className="text-center text-base text-gray-700 leading-relaxed">
+        あなたの好きな働き方、好きな作業、<br />やりたいこと、やりたくないこと、<br />遠慮なく話し合っていきましょう！
+      </p>
+    </div>
     <div className="max-w-6xl mx-auto px-4">
       <div className="space-y-4">
         {[
           {
-            question: "働いているスタッフさんは、サロン選びで重視したポイントは何ですか？",
-            answer: "私たちのサロンを選んでくれたスタッフの多くが、「ゆとりのある施術時間」と「家庭との両立のしやすさ」を重視していました。1日最大5名までの施術で、お客様一人一人と向き合える環境を整えています。また、完全週休2日制で、産休・育休の取得率100%など、ライフスタイルに合わせた働き方ができることも魅力の一つだと思います。"
+            question: "働く日数を途中から減らす働き方は可能ですか？どんな働き方がありますか？",
+            answer: "パート、業務委託があります！ネイリストに疲れてしまったら、アイリスト、系列の美容院等もございます。美容学校に通いながらアシスタント業務をしているスタッフもおりますので遠慮なくご相談下さい。"
           },
           {
-            question: "実際に働いてみて、どのような経験が得られますか？",
-            answer: "マンツーマンということもありお客様との関わり方、丁寧な接客やお気遣いの大切さなどを学ぶことができます。また、スタイリスト一人一人に専用の材料棚を用意しているため、自分の判断で材料を選び、創造性を発揮できる環境です。お客様との信頼関係を築きながら、技術だけでなく人間性も成長できる場所です。"
+            question: "お給料の仕組みを教えて欲しいです",
+            answer: "社員は売上の30%、業務委託40%、パート　時給1225円〜※各種歩合がつきます"
           },
           {
-            question: "職場の雰囲気や人間関係を教えてください",
-            answer: "上下関係による人間関係のトラブルを最小限に抑えることを心がけています。スタッフ同士も仲が良く、分からないことも親切に教えてもらえる環境です。子育て中のスタッフも多く、育児をしながらの仕事にも理解があるあたたかいサロンです。お客様も長くご来店いただいている方が多く、スタッフとの関係も良好です。"
+            question: "自分に寄り添って一緒に伴走してもらえるのでしょうか？",
+            answer: "もちろんです。みんなで一人ひとりに合わせた「その人の個」を大切にする事が、チームに繋がっていきます。"
           }
         ].map((qa, index) => (
           <details 
@@ -1322,16 +1125,16 @@ function MainComponent() {
           >
             <summary className="text-lg md:text-xl font-medium cursor-pointer list-none flex justify-between items-center text-gray-800">
               <span className="flex items-center gap-3">
-                <span className="text-[#D3B58D] font-bold">Q.</span>
+                <span className="text-[#7fbcd1] font-bold">Q.</span>
                 {qa.question}
               </span>
-              <span className="transform group-open:rotate-180 transition-transform duration-300 text-[#D3B58D]">
+              <span className="transform group-open:rotate-180 transition-transform duration-300 text-[#7fbcd1]">
                 ▼
               </span>
             </summary>
             <div className="mt-6 pl-8 text-gray-600 leading-relaxed">
               <div className="flex">
-                <span className="text-[#D3B58D] font-bold text-lg mr-3">A.</span>
+                <span className="text-[#7fbcd1] font-bold text-lg mr-3">A.</span>
                 <p className="text-gray-700">{qa.answer}</p>
               </div>
             </div>
@@ -1357,7 +1160,7 @@ function MainComponent() {
               <div className="md:w-1/3 flex flex-col items-center text-center">
                 <div className="w-32 h-32 md:w-64 md:h-64 overflow-hidden rounded-full border-4 border-white shadow-md mb-6">
                   <Image
-                    src="/image/itou1.png"
+                    src="/image/KATAGAWA.jpg"
                     alt="オーナーの写真"
                     width={500}
                     height={500}
@@ -1366,32 +1169,31 @@ function MainComponent() {
                   />
                 </div>
                 <h3 className="text-xl font-bold mb-2">オーナー</h3>
-                <p className="text-gray-600 mb-8 md:mb-0">伊藤</p>
+                <p className="text-gray-600 mb-8 md:mb-0">片川</p>
               </div>
               
               <div className="md:w-2/3">
                 <div className="prose prose-sm md:prose-lg max-w-none">
                   <p className="space-y-6 md:space-y-8">
                     <span className="block mb-6 md:mb-8 text-gray-800 text-base md:text-lg leading-relaxed">
-                      はじめまして。amberlオーナーの伊藤圭吾です。
-                      僕は美容師という仕事にとても誇りを持っています。周りの美容師仲間も皆、それぞれ芯を持って働いています。
-                      そして自分の大切なことはなにか。そこに重点を置いています。
+                      <span className="font-bold text-[#7fbcd1]">スタッフ1人1人が、より働きやすい環境作りを第一に考えています。</span><br />
+
+                      お気軽にご応募ください。高校卒業後、通信制のスクールに通いながら働いているスタッフ、子供の学校のあいだに働いているスタッフ、毎日フル活動しているスタッフと働き方は様々です！どこよりも働きやすく長くお仕事できる環境が整ってます！
                     </span>
 
                     <span className="block mb-6 md:mb-8 text-gray-800 text-base md:text-lg leading-relaxed">
-                      僕自身、美容師はとても好きですが他にも家族との時間や趣味の時間、人との付き合いの時間もとても大切にしています。
-                      全てのバランスが整っている時、その人のポテンシャルが発揮されると思っています。
-                      自分の心や身体が充実している状態こそが人を幸せに出来る状態であると思います。amberlで働くスタッフには出来るだけそのような状態でいてほしいです。
+                      スタッフみんながとても仲良く、不安や心配な事はみんなで解決していきます。<br />
+                      また、<span className="font-bold text-[#7fbcd1]">学びたい技術があれば、できるスタッフに教わったり、費用は会社負担で外部講習に行く事も可能☆</span>あなたの可能性は無限大！一人一人が自立をし、仲間の夢を応援するサロンです！
                     </span>
 
                     <span className="block mb-6 md:mb-8 text-gray-800 text-base md:text-lg leading-relaxed">
-                      僕たちはお客様を笑顔に、幸せにしてあげられる職業です。
-                      日々あわただしく過ぎていく日常ではなく、心に余裕とゆとりを持ち、お客様や周りの人に幸せを分けてあげられるような働き方をしていただきたいです。
+                      
+                      年間行事では、BBQ、入社式、レクリエーション等開催！他店のスタッフとも交流出来ます(^^)
                     </span>
 
-                    <span className="block text-gray-800 text-base md:text-lg leading-relaxed">
-                      そんな環境を作るのも僕の仕事です。時代に合わせて現代を働く美容師さんたちの充実したワークライフバランスを作ることが僕自身の目標でもあります。
-                      ご応募後、是非一度お話を聞きにいらしてください。
+                    <span className="block text-gray-800 text-base md:text-lg leading-relaxed font-bold text-[#7fbcd1]">
+                      毎日楽しく働きたい、学びたい、笑顔でいたい！<br />
+                      そんな方は是非、一緒に働きましょう！！
                     </span>
                   </p>
                   </div>
@@ -1413,7 +1215,7 @@ function MainComponent() {
               <div className="flex flex-col space-y-4">
                 <div className="flex space-x-4">
                   <a 
-                    href="https://www.instagram.com/amberl202467" 
+                    href="https://www.instagram.com/eye_nail_lokahi/?igsh=am9jZGR3eGltdm80#" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="text-2xl hover:text-[#4a90e2]"
@@ -1426,20 +1228,20 @@ function MainComponent() {
             </div>
             <div>
               <h3 className="text-xl mb-4">店舗情報</h3>
-              <p>住所：〒458-0844 愛知県名古屋市緑区鳴海町母呂後７６</p>
+              <p>住所：神奈川県鎌倉市大船1-13-15 skyビル203</p>
               <p>電話：052-693-6609</p>
-              <p>営業時間：10:00-19:00（カット最終受付18:00）</p>
-              <p>定休日：毎週月曜日</p>
+              <p>営業時間：09:00〜21:00</p>
+              
               <div className="mt-4 w-full h-[400px] rounded-lg overflow-hidden shadow-lg">
                 <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6530.672073295563!2d136.9469809!3d35.0733357!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60037dbbd88f363d%3A0xa666fcf643dec8e7!2samberl%E3%80%90%E3%82%A2%E3%83%B3%E3%83%90%E3%83%BC%E3%83%AB%E3%80%91!5e0!3m2!1sja!2sjp!4v1743482289459!5m2!1sja!2sjp"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3254.2010480828612!2d139.529089975893!3d35.35065654806253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60184560e1b54ae7%3A0x322baae6ff278a26!2z44CSMjQ3LTAwNTYg56We5aWI5bed55yM6Y6M5YCJ5biC5aSn6Ii577yR5LiB55uu77yR77yT4oiS77yR77yVIFNreeODk-ODqyAyMDM!5e0!3m2!1sja!2sjp!4v1760576900999!5m2!1sja!2sjp"
                   className="w-full h-full"
                   style={{ border: 0 }}
                   allowFullScreen=""
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="amberlの所在地"
-                  aria-label="amberlの所在地を示すGoogleマップ"
+                  title="Lokahiの所在地"
+                  aria-label="Lokahiの所在地を示すGoogleマップ"
                 ></iframe>
               </div>
             </div>

@@ -8,8 +8,8 @@ const notoSerifJP = Noto_Serif_JP({
 })
 
 export const metadata = {
-  title: 'amberl ストレスフリーな美容師ライフ',
-  description: '愛知県名古屋市緑区の美容室amberlの求人サイトです。',
+  title: 'Lolahi',
+  description: 'Lokahiの求人サイトです。',
 }
 
 export default function RootLayout({ children }) {
