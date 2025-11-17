@@ -113,24 +113,12 @@ const ImageSlideshow = () => {
 
   const images = [
     {
-      src: "/image/t1.jpeg",
+      src: "/image/naisou.jpeg",
       alt: "店内の様子"
     },
     {
-      src: "/image/t2.jpeg",
+      src: "/image/gaikan.jpeg",
       alt: "店内の様子"
-    },
-    {
-      src: "/image/t3.jpeg",
-      alt: "店内の様子"
-    },
-    {
-      src: "/image/t4.jpeg",
-      alt: "店内の様子"
-    },
-    {
-      src: "/image/gaikan1.JPG",
-      alt: "外観の様子"
     },
   ];
 
@@ -298,7 +286,7 @@ function MainComponent() {
       },
       {
         main: "学び続けたい、成長したい方",
-        sub: "費用は会社負担で外部講習に参加可能。自己成長もできる環境です"
+        sub: "費用は半分負担で外部講習に参加可能。自己成長もできる環境です"
       },
       {
         main: "チームワークを大切にできる方",
@@ -438,7 +426,7 @@ function MainComponent() {
             {/* PC用ナビゲーション */}
             <nav className="hidden md:block">
               <ul className="flex space-x-8">
-                <li><a href="#concept" className="hover:text-[#7fbcd1] transition-colors duration-300">amberlで働くことで得られる事</a></li>
+                <li><a href="#concept" className="hover:text-[#7fbcd1] transition-colors duration-300">Lokahiで働くことで得られる事</a></li>
                 <li><a href="#staff" className="hover:text-[#7fbcd1] transition-colors duration-300">スタッフ紹介</a></li>
                 <li><a href="#requirements" className="hover:text-[#7fbcd1] transition-colors duration-300">募集要項</a></li>
                 <li><a href="#qa" className="hover:text-[#7fbcd1] transition-colors duration-300">よくある質問</a></li>
@@ -501,7 +489,7 @@ function MainComponent() {
             <div className="absolute inset-0 flex items-center">
               <div className="text-white px-0 md:px-12 ml-4 md:hidden"> {/* md:hidden を追加してPCでは非表示に */}
                 <h1 className="text-3xl md:text-3xl font-medium tracking-wider leading-relaxed mb-3 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] text-shadow-strong">
-                  No Lokahi No Life
+                  No <span className='font-bold'>Lokahi</span> No <span className='font-bold'>Life</span>
                 </h1>
               </div>
             </div>
@@ -522,7 +510,7 @@ function MainComponent() {
               {/* 最初のメッセージ */}
               <div className="text-left">
                 <h1 className="text-2xl md:text-3xl font-medium tracking-wider leading-relaxed mb-3 opacity-0 translate-y-10 transition-all duration-1000 ease-out" style={{ animationFillMode: 'forwards' }}>
-                No Lokahi No Life
+                No <span className="font-bold">Lokahi</span> No <span className="font-bold">Life</span>
                 </h1>
               </div>
 
@@ -698,7 +686,7 @@ function MainComponent() {
                 <br />
                 幅広い学びの機会を提供。
                 <br />
-                <span className="border-b border-[#7fbcd1]">学びたい技術があれば、費用は会社負担で<br />外部講習に行く事も可能</span>など、
+                <span className="border-b border-[#7fbcd1]">学びたい技術があれば、費用は半分負担で<br />外部講習に行く事も可能</span>など、
                 <br />
                 キャリアアップを目指す方への環境も充実。
                 <br />
@@ -741,7 +729,7 @@ function MainComponent() {
               <div className="flex flex-col md:flex-row gap-4 md:gap-6">
                 <div className="w-full md:w-[400px] flex-shrink-0">
                   <Image
-                    src="/image/kazoku.jpg"
+                    src="/image/staff1.jpeg"
                     alt="スタッフの様子"
                     width={400}
                     height={300}
@@ -770,7 +758,7 @@ function MainComponent() {
               <div className="flex flex-col md:flex-row gap-4 md:gap-6">
                 <div className="w-full md:w-[400px] flex-shrink-0">
                   <Image
-                    src="/image/sutoresu.jpg"
+                    src="/image/tokutyou2.png"
                     alt="スタッフの様子"
                     width={400}
                     height={300}
@@ -799,7 +787,7 @@ function MainComponent() {
               <div className="flex flex-col md:flex-row gap-4 md:gap-6">
                 <div className="w-full md:w-[400px] flex-shrink-0">
                   <Image
-                    src="/image/newtokutyou.jpg"
+                    src="/image/tokutyou3.png"
                     alt="スタッフの様子"
                     width={400}
                     height={300}
@@ -948,9 +936,9 @@ function MainComponent() {
                     <div>
                       <h5 className="font-medium mb-2">給与</h5>
                       <ul className="list-disc pl-5 space-y-2 text-gray-600">
-                        <li>パート：時給1,225円〜</li>
+                        <li>パート：時給1,250円〜</li>
                         <li>社員：19万円〜</li>
-                        <li>業務委託：完全歩合、出来高40％〜50％</li>
+                        <li>業務委託：完全歩合、売上げの40％〜</li>
                       </ul>
                     </div>
                     <div>
@@ -987,15 +975,15 @@ function MainComponent() {
                       <h5 className="font-medium mb-2">給与</h5>
                       <ul className="list-disc pl-5 space-y-2 text-gray-600">
                         <li>正社員：月給19.0万円〜25.0万円</li>
-                        <li>アルバイト・パート：時給1,162円〜</li>
-                        <li>業務委託：完全歩合、出来高40％〜50％</li>
+                        <li>パート：時給1,250円〜</li>
+                        <li>業務委託：完全歩合、売上げの40％〜</li>
                       </ul>
                     </div>
                     <div>
                       <h5 className="font-medium mb-2">勤務時間</h5>
                       <ul className="list-disc pl-5 space-y-2 text-gray-600">
-                        <li>正社員<br />・09:00〜17:00（時短応相談）<br />・11:00〜19:00（時短応相談）<br />・13:00〜21:00（時短応相談）</li>
-                        <li>アルバイト・パート<br />・09:00〜21:00（時短応相談）<br />・1日3時間からOK</li>
+                        <li>正社員<br />・8:30〜17:30（時短応相談）<br />・9:00〜18:00（時短応相談）<br />・10:00〜19:00（時短応相談）</li>
+                        <li>アルバイト・パート<br />・8:30〜17:30（時短応相談）<br />・9:00〜18:00（時短応相談）<br />・10:00〜19:00（時短応相談）</li>
                         <li>業務委託<br />・週1回〜週6回、シフト制、時短勤務OK<br />・09:00〜17:00（時短応相談）<br />・11:00〜19:00（時短応相談）<br />・13:00〜21:00（時短応相談）</li>
                         <li>最大7時間勤務、3時間からOK</li>
                       </ul>
@@ -1006,6 +994,7 @@ function MainComponent() {
                         <li>まつげパーマ</li>
                         <li>アイラッシュ</li>
                         <li>まつげエクステ</li>
+                        <li>wax脱毛、ラミネーション</li>
                         <li>マツエク、パリジェンヌ、まつげパーマの施術</li>
                       </ul>
                     </div>
@@ -1109,7 +1098,7 @@ function MainComponent() {
           },
           {
             question: "お給料の仕組みを教えて欲しいです",
-            answer: "社員は売上の30%、業務委託40%、パート　時給1225円〜※各種歩合がつきます"
+            answer: "社員は売上の30%、業務委託40%、パート　時給1250円〜※各種歩合がつきます"
           },
           {
             question: "自分に寄り添って一緒に伴走してもらえるのでしょうか？",
